@@ -1,0 +1,121 @@
+.header {
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  &__top {
+    .container {
+      position: relative;
+    }
+    &-content {
+      position: absolute;
+      top: -16px;
+      right: 10px;
+      z-index: 1;
+      & > div:not(:last-child) {
+        margin-right: 6px;
+        &:after {
+          $dots-width: 7px;
+          content: '';
+          display: inline-block;
+          width: $dots-width;
+          height: $dots-width;
+          background-color: $grey-separator-color;
+          border-radius: 50%;
+          margin-left: 3px;
+        }
+      }
+
+      &-lang {
+        input[name="lang"] {
+          display: none;
+        }
+
+        input[name="lang"]:checked + span {
+          background-color: $accent-color;
+          color: $white-color;
+        }
+
+        label span {
+          cursor: pointer;
+          font-size: 12px;
+          font-weight: $font-bold;
+          letter-spacing: 1px;
+          color: $grey-text-color;
+          padding: 5px 7px;
+          border-radius: 8px;
+          display: inline-block;
+          &:hover{
+            background: $grey-bg-color;
+            border-radius: 8px;
+            transition: $transition;
+          }
+        }
+
+        &_dark label span{
+          color:$white-color;
+          &:hover{
+            background: rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+
+      &-address,
+      &-tel,
+      &-social {
+        a {
+          color: $grey-text-color;
+          &:hover {
+            color: $accent-color;
+            transition: $transition;
+          }
+        }
+        &_dark a{
+          color:$white-color;
+        }
+      }
+      &-tel {
+        a {
+          font-weight: $font-bold;
+        }
+      }
+    }
+  }
+
+  .navbar {
+    &__brand {
+      gap: 5px;
+      margin-top: -20px;
+
+      &-current-page {
+        margin-top: -20px;
+        span {
+          font-size: 36px;
+          color:$main-color;
+        }
+        &_dark span{
+          color:$white-color;
+        }
+      }
+    }
+
+    &-nav {
+      width: 100%;
+      gap: 15px;
+      padding-top: 15px;
+
+      .nav-link {
+        font-weight: $font-bold;
+        padding-bottom: 3px;
+
+        &.active,
+        &:hover{
+          border-bottom: 2px solid;
+          transition:$transition;
+        }
+      }
+    }
+  }
+}

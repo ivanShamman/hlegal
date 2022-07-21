@@ -1,0 +1,33 @@
+.services{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  overflow: hidden;
+  &__title{
+    margin-bottom: 60px;
+    a{
+      margin-bottom: 10px;
+      gap: 5px;
+      color: $active-regular-color;
+      &:hover{
+        color:$accent-color;
+        transition: $transition;
+      }
+    }
+  }
+  &__content{
+    &-icon{
+      padding: 14px;
+      background-color:$white-color;
+      border-radius:24px;
+      margin-bottom: 30px;
+    }
+    &-description{
+      color:$white-color;
+      a{
+        font-size:$font-lg-size;
+        font-weight:$font-bold;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

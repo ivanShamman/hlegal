@@ -1,0 +1,35 @@
+.service-entry{
+  margin-bottom: 60px;
+  &__content{
+    gap: 28px;
+    padding-bottom: 60px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+    &-icon{
+      padding: 14px;
+      background:$white-color;
+      border-radius: 24px;
+    }
+    p{
+      font-size: 19px;
+      line-height: 30px;
+      color: $white-color;
+    }
+  }
+  &__list{
+    padding-bottom: 60px;
+    h3{
+      color: $white-color;
+      margin-bottom: 30px;
+    }
+    ul{
+      color:$accent-color;
+      padding-left: 20px;
+      list-style: disc;
+      p{
+        font-size: $font-md-size;
+        color: $white-color;
+      }
+    }
+  }
+}

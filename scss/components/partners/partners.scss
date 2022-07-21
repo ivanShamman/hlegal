@@ -1,0 +1,42 @@
+.partners{
+  margin: 60px 0;
+  &__title{
+    margin-bottom: 30px;
+  }
+  &__content{
+    overflow: hidden;
+    border-radius: $main-border-radius;
+    &-item{
+      height: 120px;
+      background-color:$black-color;
+
+      &_blue{
+        background-color:#1C4280;
+      }
+      &_dark-green{
+        background-color:#143646;
+      }
+      &_orange{
+        background-color:#FD9339;
+      }
+      &_purple{
+        background-color:#9E4DC3;
+      }
+      &_gray{
+        background-color:#E2E2E4;
+      }
+      &_red{
+        background-color:#C71C36;
+      }
+      &_light{
+        background-color:#DCF3F9;
+      }
+      &_dark{
+        background-color:#282240;
+      }
+      &_dark-blue{
+        background-color:#1D4568;
+      }
+    }
+  }
+}

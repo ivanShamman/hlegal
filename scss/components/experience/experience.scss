@@ -1,0 +1,38 @@
+.experience{
+  $wrapper-padding-x:60px;
+  margin: 60px 0;
+
+  &__btn-wrapper{
+    padding-right: $wrapper-padding-x;
+    border-right: 4px solid  rgba(255, 255, 255, 0.3);
+    .nav{
+      gap: 30px;
+      flex-wrap: nowrap;
+      &-pills .nav-link{
+        font-size: $font-xll-size;
+        font-weight: $font-bold;
+        color:  $grey-text-color;
+        &.active{
+          background: $gradient-red-text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        &:hover{
+          color: $accent-color;
+          transition: $transition;
+        }
+      }
+
+    }
+  }
+
+  &__text-wrapper{
+    padding-left: $wrapper-padding-x;
+    font-size: 19px;
+    color: $white-color;
+    h2{
+      color:inherit;
+      margin-bottom:  30px;
+    }
+  }
+}

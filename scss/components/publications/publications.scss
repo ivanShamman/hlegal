@@ -1,0 +1,75 @@
+.publications{
+  padding: 30px 0;
+  background-color:$grey-bg-color;
+  &__title{
+    margin-bottom: 30px;
+    a{
+      margin-bottom: 10px;
+      gap: 5px;
+      color: $active-regular-color;
+      &:hover{
+        color:$accent-color;
+        transition: $transition;
+      }
+    }
+  }
+  &__content-card{
+    border: none;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    &-img{
+      height: 200px;
+      background-size: cover;
+      background-position: center center;
+    }
+    &-body{
+      padding: 30px;
+      a{
+        font-size: $font-sm-size;
+        font-weight:$font-bold;
+        margin-bottom: 15px;
+      }
+      time{
+        font-size: 12px;
+        font-weight:$font-bold;
+        letter-spacing: 1px;
+        color:$grey-text-color;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 4px solid $grey-separator-color;
+      }
+      p{
+        font-size:$font-ex-sm-size;
+      }
+    }
+  }
+  &__segmented{
+    margin-bottom: 30px;
+    &-wrapper{
+      background:$grey-separator-color;
+      border: 2px solid $grey-separator-color;
+      border-radius: $main-border-radius;
+      gap: 2px;
+
+      & input{
+        display: none;
+      }
+      input:checked + span {
+        background-color: $white-color;
+      }
+      label span {
+        cursor: pointer;
+        color:$main-color;
+        font-weight: $font-bold;
+        padding: 8px 30px 10px;
+        border-radius: 10px;
+        display: inline-block;
+        &:hover{
+          background-color: $grey-bg-color;
+          transition:$transition;
+        }
+      }
+    }
+  }
+}

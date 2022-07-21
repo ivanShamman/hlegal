@@ -1,0 +1,8 @@
+.contact{
+  @media (max-width: 1024px) {
+    &__link,
+    &__form-wrapper{
+      margin: 0;
+    }
+  }
+}

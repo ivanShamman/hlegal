@@ -1,0 +1,7 @@
+.team-preview{
+  @media (max-width: 992px) {
+    &__item-avatar{
+      height: 500px;
+    }
+  }
+}

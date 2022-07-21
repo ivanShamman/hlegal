@@ -1,0 +1,117 @@
+.header{
+  @media (max-width: 1024px) and (min-width: 767px) {
+    .navbar .container{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  @media (max-width: 1024px) {
+    &__top-content {
+      position: static;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767px){
+    &{
+      padding-top: 0;
+    }
+    .navbar{
+      padding: 15px 0 0 0;
+      &__brand {
+        margin: 0;
+      }
+      &-toggler {
+        border: none;
+        padding: 5px;
+        &:hover,
+        &:hover{
+          background-color: #e6e6f02b;
+          transition: .3s;
+        }
+        &:focus {
+          box-shadow: none;
+          background-color: #e6e6f02b;
+        }
+        svg {
+          $icon-size: 35px;
+          fill: $main-color;
+          width: $icon-size;
+          height: $icon-size;
+        }
+        &_dark{
+          svg{
+            fill:$white-color;
+          }
+        }
+      }
+      .navbar-collapse{
+        background-color:$white-color;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 20px;
+        &_dark{
+          background-color:$grey-bg-color;
+        }
+        .nav-link {
+          padding: 7px 0;
+          font-size: 24px;
+          text-align: center;
+          border-radius: 12px;
+          background-color:$grey-bg-color;
+          color: $active-regular-color;
+          font-weight: $font-bold;
+
+          &.active {
+            border: none;
+            color: $accent-color;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            background-color:$grey-separator-color;
+            border: none;
+            transition: .3s;
+          }
+        }
+      }
+    }
+    &__top{
+      background-color:$grey-bg-color;
+      &_dark{
+      background-color: rgba(245, 245, 250, 0.2);
+      }
+      .container {
+        padding: 10px 15px;
+      }
+      &-content {
+        margin: 0;
+        justify-content: space-between;
+
+        & > div:not(:last-child):after {
+          content: unset;
+        }
+        &-address,
+        &-social {
+          display: none;
+        }
+        &-tel {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .navbar__brand{
+      img,svg{
+        height: 40px;
+      }
+      &-current-page{
+        margin: 0;
+        span{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

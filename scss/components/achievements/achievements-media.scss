@@ -1,0 +1,14 @@
+.achievements{
+  @media (max-width: 992px) {
+    &__item img{
+      width: 110px;
+      height: 40px;
+    }
+  }
+  @media (max-width: 767px) {
+    &__item img{
+      width: 195px;
+      height: 60px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.about{
+  &__content{
+    margin-bottom: 60px;
+    .hero{
+      margin-bottom: 28px;
+    }
+    p{
+      font-size: 19px;
+      color: $black-color;
+    }
+    &-list{
+      padding-left: 30px;
+      border-left: 4px solid $grey-separator-color;
+      li:not(:last-child){
+        margin-bottom: 40px;
+      }
+      &-top{
+        gap: 12px;
+        .hero{
+          margin-bottom: 0;
+        }
+      }
+      p{
+        font-size: 16px;
+        color: $main-color;
+      }
+    }
+    &-hero-wrapper{
+      padding-left: 30px;
+    }
+  }
+}
+.team-bg{
+  position: relative;
+  margin-bottom: 60px;
+  h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: $font-bold;
+    font-size: 96px;
+    line-height: 117px;
+    letter-spacing: 63px;
+    color:$white-color;
+    opacity: 0.8;
+    text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+  }
+}

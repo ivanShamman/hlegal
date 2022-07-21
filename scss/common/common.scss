@@ -1,0 +1,136 @@
+body {
+  font-family: $main-font-family;
+  font-size: $font-sm-size;
+  font-weight: $font-reg;
+}
+
+.container {
+  @media (min-width: 1600px) {
+    max-width: 1600px;
+  }
+}
+
+.container-xxl{
+  max-width: 1720px;
+  @media (max-width: 1720px) {
+    padding: 0;
+  }
+}
+
+.secondary-container{
+  max-width:1480px ;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (max-width: 1600px) {
+    max-width: 1080px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 960px;
+  }
+  @media (max-width: 992px) {
+    max-width: 720px;
+  }
+  @media (max-width: 768px) {
+    max-width: 540px;
+  }
+}
+.bg-gradient{
+  position: relative;
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 60px;
+  &:before,&:after{
+    content: "";
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:before {
+    bottom: -10px;
+    background-color: #CACADB;
+    width: calc(100% - 20px) ;
+  }
+
+  &:after {
+    bottom: -20px;
+    background-color: #E7E7F2;
+    width: calc(100% - 40px);
+  }
+}
+
+.hero{
+  font-size: $font-xll-size;
+  font-weight:$font-bold;
+  line-height: 46px;
+  background: $gradient-red-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media (max-width: 420px) {
+    font-size: 28px;
+  }
+}
+h2{
+  font-size: $font-xl-size;
+  line-height: 37px;
+}
+h3{
+  font-size: $font-lg-size;
+  line-height: 27px;
+}
+
+h4{
+  font-size:$font-sm-size;
+  line-height: 20px;
+}
+.caps{
+  font-size: $font-ex-sm-size;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+h2,h3,h4,.caps{
+  font-weight:$font-bold;
+  color:$main-color;
+}
+
+
+a{
+  text-decoration: none;
+  transition: $transition;
+}
+ul{
+  list-style: none;
+}
+
+.btn-primary{
+  padding: 18px 30px;
+  font-size: $font-sm-size;
+  font-weight: $font-bold;
+  transition:$transition;
+  box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+  &:focus{
+    box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+  }
+}
+
+.page-padding{
+  padding-top: 176px!important;
+  @media (max-width: 1024px) and (min-width: 767px) {
+    padding-top: 235px!important;
+  }
+}
+.page-margin{
+  margin-top: 150px!important;
+  @media (max-width: 1024px) and (min-width: 767px) {
+    margin-top: 235px!important;
+  }
+}
+.page-margin-bottom-none{
+  @media (max-width: 1720px) {
+    margin-bottom: 0!important;
+  }
+}
+.border-none{
+  border: none!important;
+}

@@ -1,0 +1,57 @@
+.team-entry{
+  margin-bottom: 60px;
+  &__image-wrapper{
+    padding-right: 30px;
+  }
+  &__content-wrapper{
+    padding-left: 30px;
+  }
+  &__image{
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    border-radius: $main-border-radius;
+  }
+  &__content{
+    &-title{
+      margin-bottom: 30px;
+      ul{
+        gap: 26px;
+        & li:not(:last-child) {
+          position: relative;
+
+          &:after {
+            position: absolute;
+            content: "";
+            display: block;
+            background-color: $grey-text-color;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            z-index: 1;
+            top: 10px;
+            right: -15px;
+          }
+        }
+        p{
+          color: $grey-text-color;
+        }
+      }
+    }
+    &-description{
+      border-top: 4px solid $grey-separator-color;
+      padding-top: 30px;
+      p{
+        color: $black-color;
+      }
+      h4{
+        margin-bottom: 15px;
+      }
+      &-about,
+      &-education{
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

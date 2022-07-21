@@ -1,0 +1,23 @@
+.achievements{
+  padding: 30px 0 75px;
+  background-color: $grey-bg-color;
+  &__title{
+    margin-bottom: 30px;
+  }
+  &__item{
+    height: 100%;
+    padding: 25px 0;
+    background-color:$white-color;
+    overflow: hidden;
+    border-radius: $main-border-radius;
+  }
+  .carousel-indicators{
+    bottom: -70px;
+    button{
+      background-color:$active-regular-color;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

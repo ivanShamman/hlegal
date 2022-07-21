@@ -1,0 +1,20 @@
+.footer{
+  @media (max-width: 768px) {
+    &__address-wrapper{
+      margin-bottom: 21px;
+      gap: 10px;
+      address:after{
+        display: none;
+      }
+    }
+    &__contact{
+      margin-bottom: 30px;
+      gap: 10px;
+      & li:not(:last-child){
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+}

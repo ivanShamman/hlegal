@@ -1,0 +1,12 @@
+.publication-entry{
+  @media (max-width: 767px) {
+    &__content-title-cover{
+      height: 300px;
+    }
+  }
+  @media (max-width: 420px) {
+    &__content-title-cover{
+      height: 250px;
+    }
+  }
+}
